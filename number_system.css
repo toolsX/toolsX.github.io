@@ -177,9 +177,6 @@ input[type="number"] {
 }
 
 input:focus {
-  border-width: 0px;
-  -webkit-transition: 0.07s ease-out;
-  transition: 0.07s ease-out;
   color: #000;
   background: #fff;
   outline: none;
@@ -304,7 +301,6 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-   
     height: 100%;
   }
   .converter {
