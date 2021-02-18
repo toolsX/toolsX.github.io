@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "poppins";
   color: white;
@@ -316,6 +319,10 @@ button {
   }
   .calculator > .operand1 {
     width: 100%;
+  }
+  .title {
+    font-size: 120%;
+    margin-left: 10%;
   }
 }
 /*# sourceMappingURL=number_system.css.map */
