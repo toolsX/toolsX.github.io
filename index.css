@@ -5,16 +5,9 @@
   font-family: "poppins";
 }
 
-html {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-}
-
 body {
   margin: 0;
   height: 200vh;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
 }
 
 a {
@@ -49,6 +42,7 @@ a {
   position: absolute;
   padding: 0;
   margin: 0;
+  scroll-snap-align: star;
   text-align: right;
   top: 20vh;
   left: 8%;
@@ -80,6 +74,7 @@ p {
           justify-content: center;
   height: 100vh;
   width: 100%;
+  scroll-snap-align: start;
   background: white;
   margin: 0;
 }
