@@ -43,6 +43,7 @@ a {
   font-family: "poppins";
   font-weight: bold;
   font-size: 8vw;
+   pointer-events: none;
 }
 
 .secondary-title {
@@ -57,6 +58,7 @@ a {
   font-family: "poppins";
   font-weight: bold;
   font-size: 4vw;
+   pointer-events: none;
 }
 
 span {
