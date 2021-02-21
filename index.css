@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "poppins";
+}
+
+#particles-js {
+  background-color: white;
 }
 
 body {
@@ -29,6 +33,9 @@ a {
 }
 
 .main-title {
+  top: 30%;
+  width: 100%;
+  position: absolute;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -40,16 +47,16 @@ a {
 
 .secondary-title {
   position: absolute;
+  width: 100%;
+  top: 55%;
   padding: 0;
   margin: 0;
   scroll-snap-align: star;
-  text-align: right;
-  top: 20vh;
-  left: 8%;
+  text-align: center;
   color: black;
   font-family: "poppins";
   font-weight: bold;
-  font-size: 8vw;
+  font-size: 4vw;
 }
 
 span {
@@ -68,19 +75,15 @@ p {
 }
 
 .section1 {
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 100vh;
   width: 100%;
+  top: 0%;
   scroll-snap-align: start;
   background: white;
   margin: 0;
 }
 
 .section2 {
-  position: relative;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -95,7 +98,6 @@ p {
 }
 
 .section3 {
-  position: relative;
   height: 80vh;
   width: 100%;
   scroll-snap-align: start;
@@ -115,15 +117,15 @@ p {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   font-family: "poppins";
   height: auto;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
 }
 
 .tiles .number-system-tile {
@@ -132,7 +134,7 @@ p {
   border-radius: 25px;
   margin-left: 2%;
   margin-right: 2%;
-  background: linear-gradient(45deg, blue, #d66eff);
+  background: linear-gradient(45deg, blue, #b700ff);
 }
 
 .tiles .data-size-tile {
@@ -159,5 +161,14 @@ p {
   color: white;
   border: none;
   font-size: 40px;
+}
+
+@media screen and (max-width: 650px) {
+  .main-title {
+    font-size: 10vw;
+  }
+  .secondary-title {
+    font-size: 5.5vw;
+  }
 }
 /*# sourceMappingURL=index.css.map */
