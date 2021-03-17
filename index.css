@@ -328,6 +328,7 @@ nav.mobile {
 }
 
 .bottom-nav-item {
+  outline:none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
