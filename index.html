@@ -15,6 +15,10 @@
     />
     <meta name="author" content="Maher Safadi" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.4.0/dist/animxyz.min.css"
+    />
     <title>toolsX - Home</title>
     <link rel="stylesheet" href="index.css" />
     <script
@@ -22,28 +26,83 @@
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     ></script>
+    
+    <script src="https://kit.fontawesome.com/0333bb930f.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
+
+
+    <nav class="desktop">
+     
+      <a href="index.html" class="logo">ToolsX</a>
+
+      <ul class="nav-links">
+        <li>
+          <a href="index.html"class="link">Home</a>
+        </li>
+
+        <li>
+          <a href="/#section3"class="link">Tools</a>
+        </li>
+        <li>
+          <a href="/#section2" class="link">About</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="mobile">
+     
+      <a  href="index.html"class="bottom-nav-item">
+        <i class="fas fa-home"></i>
+        home
+      </a>
+
+      
+
+      <a href="#articles"  class="bottom-nav-item">
+        <i class="fas fa-newspaper"></i>
+        articles
+      </a>
+      <a  href="#section3"class="bottom-nav-item">
+        <i class="fas fa-tools"></i>
+        tools
+      </a>
+
+      <a href="#section2"class="bottom-nav-item">
+        <i class="fas fa-info"></i>
+        about
+      </a>
+      
+      
+      
+    </nav>
+
+
+
+
     <div id="particles-js" class="section1">
-      <h1 class="main-title">Tools<span>X</span></h1>
-      <h6 class="secondary-title">
+      
+      <h1 class="main-title xyz-in" xyz="fade up big">Tools<span>X</span></h1>
+
+      <h6 class="secondary-title xyz-in" xyz="fade in big">
         The Ultimate website for <span>tools</span>.
       </h6>
+      
     </div>
 
-    <!--  <div class="section2">
-      <div class="title">
-        <h1>Tools</h1>
+    <div class="articles" id="articles">
+      <div class="title dark">
+        <h1>Articles</h1>
       </div>
-      <div class="tiles">
-        <div class="number-system-tile">
-          <a class="light" href="number_system.html"
-            >Number System Calculator</a
-          >
-        </div>
-      </div> -->
+      <div class="tile-group">
+        <div class="tile chegg"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+      </div>
+    </div>
 
-    <div class="section2">
+    <div id="section2" class="section2">
       <div class="title light">
         <h1>About</h1>
       </div>
@@ -51,21 +110,20 @@
       <p>
         This website is a project that aims to contain as many useful tools as
         possible, there is currently a number system calculator and converter
-        tool and this is just the beginning, this site will keep on adding new
+        tool and this is just the begining, this site will keep on adding new
         tools by time.
       </p>
       <p>
-        The website will receive updates continuously, so if you find any bugs
+        The website will recieve updates continuously, so if you find any bugs
         or issues with the website feel free to
         <a href="mailto:toolsx.app@gmail.com">report</a> it to us.
       </p>
       <p>
-        If you have a suggestion for a tool by any type you can
+        If you have a suggestion for a tools by any type you can
         <a href="mailto:toolsx.app@gmail.com">send</a> us your suggestion.
       </p>
     </div>
-
-    <div class="section3">
+    <div id="section3" class="section3">
       <div class="title dark">
         <h1>Tools</h1>
       </div>
@@ -77,15 +135,13 @@
           >
         </div>
       </div>
-
-      <!--
-          <div class="data-size-tile">
-        <a class="dark" href="number_system.html">Data Size Calculator</a>
-      </div>
-      -->
     </div>
+
+    <div class="footer">content</div>
   </body>
 
+  <script src = "index.js"></script>
+  </script>
   <script src="particles.js"></script>
   <script src="app.js"></script>
 </html>
