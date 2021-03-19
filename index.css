@@ -337,13 +337,13 @@ nav.mobile {
   margin: 0;
 }
 
-.bottom-nav-item:hover {
-  background-color: #1d54d4;
+.bottom-nav-item-label {
+  margin-top: 5px;
+  color: #ceddff;
 }
 
-.fas {
-  width: auto;
-  height: auto;
+.bottom-nav-item:hover {
+  background-color: #1d54d4;
 }
 
 @media screen and (max-width: 768px) {
@@ -379,6 +379,8 @@ nav.mobile {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     height: 11vh;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
