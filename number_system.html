@@ -3,24 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <meta charset="UTF-8">
     <meta name="description" content="easy to use  universal number system calculator and converter that converts between decimal,binary,octal and hexadecimal and any other base and can do math operations like addition subtraction, devision and multiplication ">
-    <meta name="keywords" content="number,systems,calculator,converter,binary,decimal,octal,hexadecimal,base,universal">
+    <meta name="keywords" content="calculator, converter, binary, decimal,octal,hexadecimal,base,universal">
     <meta name="author" content="Maher Safadi">
    
+    
     <title>toolsX</title>
     <link rel="stylesheet" href="number_system.css" />
     <script data-ad-client="ca-pub-5168407254929306" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://kit.fontawesome.com/0333bb930f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <div class="title">
-      <h1>Numbering Systems Converter/Calculator</h1>
+
+    
+   
+
+    
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+      
     </div>
+    
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+    
+      <h1 class="title">Numbering<br>Systems<br>Calculator</h1>
+
 
     <div class="tool_view">
       <div class="converter">
-        <div class="div1">
+        <div class="value_input">
           <label class="styl" for="decimal_input" id="aa">Decimal </label>
           <input
             id="decimal-input"
@@ -29,7 +51,7 @@
           />
         </div>
 
-        <div class="div1">
+        <div class="value_input">
           <label for="binary_input">Binary</label>
           <input
             class="styl"
@@ -39,7 +61,7 @@
           />
         </div>
 
-        <div class="div1">
+        <div class="value_input">
           <label for="octal_input">Octal</label>
           <input
             class="styl"
@@ -49,17 +71,17 @@
           />
         </div>
 
-        <div class="div1">
+        <div class="value_input">
           <label for="hexadecimal-input">Hexadecimal</label>
           <input class="styl" id="hexadecimal-input" type="text" />
         </div>
 
-        <div class="div1">
+        <div class="value_input">
           <label for="base-input">Base(n)</label>
           <input class="styl" id="base-input" type="text" />
         </div>
 
-        <div class="div1">
+        <div class="value_input">
           <label for="base-input-selector">n</label>
           <input class="styl" id="base-input-selector" type="number" />
         </div>
@@ -67,20 +89,25 @@
        <span class="hhh">select a base(n).</span> 
       </div>
 
+
+
+
+
+
       <div class="calculator">
-        <div class="operand1">
+        <div class="operand">
           <input type="text" name="op11" id="op11" placeholder="Operand 1" />
           <input id="op1" type="number" placeholder="n" min="1" />
         </div>
 
         <div class="button_group">
-          <button class="tmp"id="addition-button" onclick="addition()">+</button>
-          <button   onclick="subtraction()" class="op-button1">-</button>
-          <button  onclick="division()" class="op-button2">÷</button>
-          <button  class="button_clicked" onclick="multiplication()">×</button>
+          <button class="op-button" id="addition-button" onclick="addition()">+</button>
+          <button class="op-button" onclick="subtraction()" id="op-button1">-</button>
+          <button class="op-button" onclick="division()" id="op-button2">÷</button>
+          <button class="op-button" onclick="multiplication()">×</button>
         </div>
 
-        <div class="operand1">
+        <div class="operand">
           <input type="text" name="op22" id="op22" placeholder="Operand 2" />
           <input id="op2" type="number" placeholder="n" min="1" />
         </div>
