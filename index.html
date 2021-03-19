@@ -27,60 +27,26 @@
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     ></script>
     
+  <link rel="stylesheet" href="nav.css">
     <script src="https://kit.fontawesome.com/0333bb930f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
 
 
 
-    <nav class="desktop">
-     
-      <a href="index.html" class="logo">ToolsX</a>
-
-      <ul class="nav-links">
-        <li>
-          <a href="index.html"class="link"><i class="fas fa-home" style="margin-right: 5px;"></i>Home</a>
-        </li>
-        <li>
-          <a href="/#articles"class="link"><i class="fas fa-newspaper" style="margin-right: 5px;"></i>articles</a>
-        </li>
-
-        <li>
-          <a href="/#section3"class="link"><i class="fas fa-tools" style="margin-right: 5px;"></i>Tools</a>
-        </li>
-        <li>
-          <a href="/#section2" class="link"><i class="fas fa-info" style="margin-right: 5px;"></i>About</a>
-        </li>
-      </ul>
-    </nav>
-    <nav class="mobile">
-     
-      <a  href="index.html"class="bottom-nav-item">
-        <i class="fas fa-home" style="margin-top: 20px; font-size:1.8em"></i>
-        <label class="bottom-nav-item-label">home</label>
-        
-      </a>
-
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
       
-
-      <a href="/#articles"  class="bottom-nav-item">
-        <i class="fas fa-newspaper" style="margin-top: 20px; font-size:1.8em"></i>
-        <label class="bottom-nav-item-label">articles</label>
-      </a>
-      <a  href="/#section3"class="bottom-nav-item">
-        <i class="fas fa-tools fa-2x" style="margin-top: 20px; font-size:1.8em"></i>
-        <label class="bottom-nav-item-label">tools</label>
-      </a>
-
-      <a href="/#section2"class="bottom-nav-item">
-        <i class="fas fa-info fa-2x" style="margin-top: 20px; font-size:1.8em"></i>
-        <label class="bottom-nav-item-label">about</label>
-      </a>
-      
-      
-      
-    </nav>
-
+    </div>
+    
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+    
 
 
 
@@ -101,10 +67,14 @@
       <div class="tile-group">
         <div class="tile chegg"></div>
         <div class="tile"></div>
-        <div class="tile"></div>
         <div class="tile soon">
-          <label>soon...</label>
+          
+          </div>
+       
+       
+          <div class="tile soon">
           <canvas id="canvas"></canvas>
+          <label>soon...</label>
         </div>
         
        
@@ -117,10 +87,9 @@
       
 
       <p>
-        This website is a project that aims to contain as many useful tools as
-        possible, there is currently a number system calculator and converter
-        tool and this is just the begining, this site will keep on adding new
-        tools by time.
+        This website is a project that aims to contain as many useful tools and articles as
+        possible, there is currently a limited amount of tools and articles on the website but this 
+        is just the begining, new useful content will be added to the website over time.
       </p><br>
       <p>
         The website will recieve updates continuously, so if you find any bugs
@@ -128,7 +97,7 @@
         <a href="mailto:toolsx.app@gmail.com">report</a> it to us.
       </p><br>
       <p>
-        If you have a suggestion for a tools by any type you can
+        If you have a suggestion for a tool or a article by any type you can
         <a href="mailto:toolsx.app@gmail.com">send</a> us your suggestion.
       </p><br>
     </div>
@@ -139,7 +108,7 @@
 
       <div class="tile-group">
         <div class="tile number-system-tile">
-          <a class="light" href="number_system.html"
+          <a class="tile-link" href="number_system.html"
             >Number System Calculator</a
           >
         </div>
@@ -150,6 +119,7 @@
   </body>
 
   <script src = "index.js"></script>
+  
   </script>
   <script src="particles.js"></script>
   <script src="app.js"></script>
