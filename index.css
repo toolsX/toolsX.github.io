@@ -8,7 +8,7 @@ html {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "poppins";
@@ -134,7 +134,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .tile-group .tile {
@@ -144,7 +144,7 @@ p {
   width: 45%;
   height: 25vh;
   -webkit-filter: drop-shadow(5px 5px 25px #bf1363);
-          filter: drop-shadow(5px 5px 25px #bf1363);
+  filter: drop-shadow(5px 5px 25px #bf1363);
 }
 
 .tile-group .chegg {
@@ -154,20 +154,50 @@ p {
   width: 45%;
   height: 25vh;
   -webkit-filter: drop-shadow(5px 5px 25px #eb9900);
-          filter: drop-shadow(5px 5px 25px #eb9900);
+  filter: drop-shadow(5px 5px 25px #eb9900);
 }
 
 .tile-group .number-system-tile {
   background: linear-gradient(45deg, blue, #b700ff);
   -webkit-filter: drop-shadow(5px 5px 25px rgba(76, 0, 255, 0.692));
-          filter: drop-shadow(5px 5px 25px rgba(76, 0, 255, 0.692));
+  filter: drop-shadow(5px 5px 25px rgba(76, 0, 255, 0.692));
 }
 
 .tile-group .number-system-tile a {
-  color: white;
+  color: rgba(255, 255, 255, 0);
   font-size: 4vw;
   font-weight: bold;
   text-decoration: none;
+}
+
+.tile-group #canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.tile-group .soon {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: white;
+  -webkit-filter: drop-shadow(5px 5px 25px rgba(0, 0, 0, 0.692));
+  filter: drop-shadow(5px 5px 25px rgba(0, 0, 0, 0.692));
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.soon > label {
+  font-weight: 600;
+  position: absolute;
+  width: 100%;
+  color: #202020;
+  font-size: 3vw;
+  text-align: center;
 }
 
 .title {
@@ -204,20 +234,20 @@ nav.desktop {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-bottom: 0;
   height: 70px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
 nav.desktop {
   -webkit-filter: drop-shadow(0px 10px 15px #225de6be);
-          filter: drop-shadow(0px 10px 15px #225de6be);
+  filter: drop-shadow(0px 10px 15px #225de6be);
 }
 
 .nav-links,
@@ -248,12 +278,12 @@ nav.desktop {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     height: 100%;
     padding: 0px 20px 0 20px;
     color: white;
@@ -289,10 +319,10 @@ nav.mobile {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   text-align: center;
   text-decoration: none;
   height: 100%;
@@ -360,16 +390,16 @@ nav.mobile {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     height: 80px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -377,7 +407,7 @@ nav.mobile {
     background-color: #225de6ff;
     z-index: 10;
     -webkit-filter: drop-shadow(0px -10px 20px #00000081);
-            filter: drop-shadow(0px -10px 20px #00000081);
+    filter: drop-shadow(0px -10px 20px #00000081);
   }
 }
 /*# sourceMappingURL=index.css.map */
