@@ -153,7 +153,7 @@ nav.mobile {
     border-top-right-radius: 20px;
     color: white;
     background-color: #225de6ff;
-    z-index: 10;
+    z-index: 1000;
     -webkit-filter: drop-shadow(0px -10px 20px #00000081);
             filter: drop-shadow(0px -10px 20px #00000081);
   }
