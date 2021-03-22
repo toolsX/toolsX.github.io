@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 5%;
+  margin: 0;
+  height: auto;
+  background: white;
+}
+
+:root {
+  --primary-color: #225de6;
+}
+
+.title {
+  font-family: "poppins";
+  font-weight: bold;
+  width: 100%;
+  margin-left: 2%;
+}
+
+input {
+  font-family: "poppins";
+  font-size: 24px;
+  color: black;
+  cursor: default;
+  background: linear-gradient(45deg, blue, #b700ff);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 20px;
+  height: 60px;
+  border: none;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  padding: 10px;
+  margin: 10px;
+}
+
+input[type="number"] {
+  width: 20%;
+}
+
+.converter > input[type="text"] {
+  width: 80%;
+}
+
+.tool_view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+}
+
+.converter {
+  width: 40%;
+  padding: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.converter label {
+  position: absolute;
+  top: 15px;
+  z-index: 2;
+  font-size: 120%;
+  margin: 10px;
+  padding: 0 10px;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: top 0.2s ease-out, font-size 0.2s ease-out;
+  transition: top 0.2s ease-out, font-size 0.2s ease-out;
+}
+
+.converter .active {
+  top: -25px;
+  font-size: 20px;
+}
+
+.calculator {
+  width: 40%;
+  height: 60vh;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.calculator input[type="number"] {
+  width: 15%;
+  margin: 0;
+}
+
+.calculator input[type="text"] {
+  width: 60%;
+}
+
+input:focus {
+  color: #000;
+  background: #fff;
+  outline: none;
+}
+
+.value_input {
+  position: relative;
+  display: block;
+}
+
+.value_input > input {
+  width: 80%;
+}
+
+button {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  margin: 0;
+  background-color: white;
+  border: none;
+  width: 25%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  color: black;
+}
+
+button:hover {
+  background-color: #e4e4e4;
+}
+
+.button_group {
+  height: 50px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  overflow: hidden;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  margin: 0;
+}
+
+.button-clicked {
+  background-color: rgba(255, 255, 255, 0.438);
+  color: black;
+}
+
+#op-button1 {
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#op-button2 {
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.operand1 {
+  display: block;
+}
+
+.result_m > input[type="number"] {
+  width: 15%;
+  margin: 0;
+}
+
+.result_m > input[type="text"] {
+  width: 60%;
+}
+
+.result_m {
+  top: 110px;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.result_label {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  color: black;
+  width: 60%;
+  height: 10%;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+@media all and (min-width: 768px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    visibility: visible;
+  }
+  .nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 5%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  /* For mobile phones: */
+  .converter {
+    width: 90%;
+    height: 120%;
+  }
+  .calculator {
+    width: 90%;
+    height: 120%;
+  }
+  .calculator > .operand1 {
+    width: 100%;
+  }
+  a.icon {
+    display: block;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    visibility: hidden;
+  }
+}
+/*# sourceMappingURL=number_system.css.map */
