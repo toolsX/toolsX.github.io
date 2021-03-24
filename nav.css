@@ -1,7 +1,8 @@
 /* SCSS HEX */
 nav.desktop {
   font-size: 18px;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   width: 100vw;
   top: 0;
   background-color: #225de6ff;
@@ -11,20 +12,20 @@ nav.desktop {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-bottom: 0;
   height: 70px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
 nav.desktop {
   -webkit-filter: drop-shadow(0px 10px 15px #225de6be);
-          filter: drop-shadow(0px 10px 15px #225de6be);
+  filter: drop-shadow(0px 10px 15px #225de6be);
 }
 
 .nav-links,
@@ -55,12 +56,12 @@ nav.desktop {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     height: 100%;
     padding: 0px 20px 0 20px;
     color: white;
@@ -96,10 +97,10 @@ nav.mobile {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   text-align: center;
   text-decoration: none;
   height: 100%;
@@ -138,16 +139,16 @@ nav.mobile {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     height: 80px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -155,7 +156,7 @@ nav.mobile {
     background-color: #225de6ff;
     z-index: 1000;
     -webkit-filter: drop-shadow(0px -10px 20px #00000081);
-            filter: drop-shadow(0px -10px 20px #00000081);
+    filter: drop-shadow(0px -10px 20px #00000081);
   }
 }
 /*# sourceMappingURL=nav.css.map */
