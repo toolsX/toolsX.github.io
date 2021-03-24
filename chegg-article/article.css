@@ -190,6 +190,9 @@ footer {
   article .note {
     width: 90%;
   }
+  img {
+    width: 90%;
+  }
   .main-title {
     font-size: 45px !important;
   }
