@@ -67,7 +67,7 @@ a {
 }
 
 .title {
-  font-size: 3vw;
+  font-size: 40px;
 }
 
 article {
@@ -177,5 +177,21 @@ footer {
   height: 40vh;
   background-color: #1f1f1f;
   color: #7c7c7c;
+}
+
+@media screen and (max-width: 768px) {
+  aside {
+    display: none;
+  }
+  article {
+    margin-left: 4%;
+    width: 95vw;
+  }
+  article .note {
+    width: 90%;
+  }
+  .main-title {
+    font-size: 45px !important;
+  }
 }
 /*# sourceMappingURL=article.css.map */
