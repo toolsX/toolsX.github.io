@@ -224,7 +224,7 @@ footer {
 @media screen and (max-width: 768px) {
   aside {
     width: 100vw;
-    height: 1vh;
+    height: 15vh;
   }
   aside img {
     width: auto;
