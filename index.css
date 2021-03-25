@@ -11,7 +11,7 @@ html {
           box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "poppins";
+  font-family: "poppins", sans-serif;
 }
 
 ::-moz-selection {
@@ -37,7 +37,7 @@ body {
   pointer-events: none;
   text-align: center;
   color: #000000ff;
-  font-family: "poppins";
+  font-family: "poppins", sans-serif;
   font-weight: bold;
   font-size: 8vw;
 }
@@ -52,13 +52,13 @@ body {
   scroll-snap-align: start;
   text-align: center;
   color: #000000ff;
-  font-family: "poppins";
+  font-family: "poppins", sans-serif;
   font-weight: 600;
   font-size: 4vw;
 }
 
 span {
-  font-family: "poppins";
+  font-family: "poppins", sans-serif;
   background: #225de6ff;
   -webkit-background-clip: text;
   background-clip: text;
@@ -125,7 +125,7 @@ p {
 }
 
 p {
-  font-family: "poppins";
+  font-family: "poppins", sans-serif;
 }
 
 .tile-group {
@@ -155,11 +155,19 @@ p {
   transition: all 0.2s ease-out;
 }
 
+.tile-group .tile .date {
+  background-color: #858585;
+  font-size: 20px;
+}
+
 .tile-group .info {
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
   position: absolute;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  min-height: 50%;
   width: 100%;
   bottom: 0px;
   margin: 0px;
