@@ -168,14 +168,14 @@ nav.mobile {
 @media (prefers-color-scheme: dark) {
   nav.desktop {
     background-color: #0e0043;
-    -webkit-filter: none !important;
-            filter: none !important;
+    -webkit-filter: drop-shadow(0px 10px 15px #00000042);
+            filter: drop-shadow(0px 10px 15px #00000042);
   }
-  nav.desktop .logo {
-    color: #225de6ff;
+  nav.desktop .navbar-logo {
+    color: white;
   }
   nav.desktop .navbar-x {
-    background-color: white !important;
+    color: #225de6ff;
   }
   nav.mobile {
     background-color: #0e0043;
