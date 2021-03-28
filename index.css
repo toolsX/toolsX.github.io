@@ -15,11 +15,21 @@ html {
 }
 
 ::-moz-selection {
-  background-color: rgba(230, 210, 34, 0.473);
+  background-color: yellow;
+  color: black;
 }
 
 ::selection {
-  background-color: rgba(230, 210, 34, 0.473);
+  background-color: yellow;
+  color: black;
+}
+
+a::-moz-selection {
+  color: blue;
+}
+
+a::selection {
+  color: blue;
 }
 
 body {
