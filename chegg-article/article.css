@@ -14,12 +14,8 @@ html {
   font-family: "poppins", sans-serif;
 }
 
-::-moz-selection {
-  background-color: rgba(230, 210, 34, 0.473);
-}
-
-::selection {
-  background-color: rgba(230, 210, 34, 0.473);
+h3 {
+  font-size: 1.5em;
 }
 
 .goog-te-banner-frame {
@@ -31,6 +27,24 @@ body {
   margin: 0;
   height: 700vh;
   scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  background-color: yellow;
+  color: black;
+}
+
+::selection {
+  background-color: yellow;
+  color: black;
+}
+
+a::-moz-selection {
+  color: blue;
+}
+
+a::selection {
+  color: blue;
 }
 
 aside {
@@ -113,9 +127,9 @@ article {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 5%;
-  margin-top: 3%;
-  width: 70%;
+  padding: 3% 3% 0 5%;
+  background-color: white;
+  width: auto;
 }
 
 .important {
@@ -183,7 +197,10 @@ p,
 .note {
   border: 3px solid #c9c9c9;
   border-radius: 20px;
-  padding: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
 }
 
 .article-list {
@@ -232,14 +249,16 @@ footer {
     width: auto;
   }
   article {
-    margin-left: 4%;
-    width: 95vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100vw;
   }
-  article .note {
-    width: 90%;
+  .article-img {
+    width: 100%;
   }
-  img {
-    width: 90%;
+  .article-img:hover {
+    width: 100vw;
+    border-radius: 0;
   }
   .main-title {
     font-size: 45px !important;
@@ -247,6 +266,9 @@ footer {
 }
 
 @media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0b0033;
+  }
   header {
     border: #190d42 3px solid;
     background-color: #0b0033;
@@ -259,15 +281,12 @@ footer {
     background-color: #0e0043;
     color: white;
   }
-  body {
-    background-color: #0e0043;
-  }
   a {
     color: yellow;
   }
   aside {
     background-color: #0b0033;
-    color: #b3acda;
+    color: #7e799c;
   }
   footer {
     background-color: #070707;
