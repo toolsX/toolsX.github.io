@@ -38,6 +38,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.typewrite > .wrap {
+  border-right: 0.1em solid #000;
+}
+
 .main-title {
   top: 15%;
   width: 100%;
@@ -349,6 +353,9 @@ p {
 }
 
 @media (prefers-color-scheme: dark) {
+  .typewrite > .wrap {
+    border-right: 0.1em solid #fff;
+  }
   .section1 {
     background: #0b0033;
   }
