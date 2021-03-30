@@ -12,6 +12,7 @@ var pJS = function(tag_id, params){
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
 
   /* particles.js variables with default values */
+  
   this.pJS = {
     canvas: {
       el: canvas_el,
@@ -125,7 +126,7 @@ var pJS = function(tag_id, params){
       },
       mouse:{}
     },
-    retina_detect: false,
+    retina_detect: true,
     fn: {
       interact: {},
       modes: {},
@@ -239,9 +240,11 @@ var pJS = function(tag_id, params){
   /* --------- pJS functions - particles ----------- */
 
   pJS.fn.particle = function(color, opacity, position){
-
+  
     /* size */
-    this.radius = (pJS.particles.size.random ? Math.random() : 1) * pJS.particles.size.value;
+    this.radius = (pJS.particles.size.random ? Math.random() * (1 - 0.4) + 0.4 : 1) * pJS.particles.size.value;
+
+    
     if(pJS.particles.size.anim.enable){
       this.size_status = false;
       this.vs = pJS.particles.size.anim.speed / 100;
