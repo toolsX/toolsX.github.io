@@ -181,8 +181,26 @@ p {
 }
 
 .tile-group .tile .date {
+  position: absolute;
   color: #858585;
   font-size: 20px;
+}
+
+.tile-group .tile .tag {
+  position: relative;
+  color: white;
+  font-size: 16px;
+  width: 75px;
+  height: 35px;
+  text-align: center;
+  border-radius: 7px;
+  padding: 6px;
+  right: 5%;
+  float: right;
+}
+
+.tile-group .tile .macos {
+  background-color: blue;
 }
 
 .tile-group .info {
@@ -206,6 +224,10 @@ p {
   -webkit-backdrop-filter: blur(5px);
   border-radius: 0 0 20px 20px;
   border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.tile-group .info .blog-title {
+  line-height: 35px;
 }
 
 .tile-group .chegg {
@@ -251,6 +273,26 @@ p {
   margin: 5px;
 }
 
+.tile-group .how-to-make-your-download-speed-faster-using-multi-threaded-downlaoding {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffbdff), to(#ffc8ff));
+  background: linear-gradient(top, #ffbdff, #ffc8ff);
+  -webkit-filter: drop-shadow(5px 5px 25px #ffa6ff);
+          filter: drop-shadow(5px 5px 25px #ffa6ff);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tile-group .how-to-make-your-download-speed-faster-using-multi-threaded-downlaoding img {
+  position: relative;
+  width: auto;
+  height: 90%;
+  z-index: -1;
+}
+
 .tile-group .tile:hover {
   z-index: 10;
   -webkit-transform: scale(1.05);
@@ -277,7 +319,7 @@ p {
 
 .tile-group #canvas {
   width: 200%;
-  height: 200%;
+  height: 00%;
 }
 
 .tile-group .soon {
