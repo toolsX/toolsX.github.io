@@ -363,9 +363,6 @@ p {
     font-size: 10vw;
     top: 15vh;
   }
-  .blog-title {
-    font-size: 3vh;
-  }
   .soon > label {
     font-size: 40px;
   }
@@ -386,7 +383,7 @@ p {
     font-size: 7vw;
   }
   .blog-title {
-    font-size: 3vh;
+    font-size: 25px;
   }
 }
 
@@ -400,13 +397,13 @@ p {
   .title {
     font-size: 12vw;
   }
-  .chegg img {
-    -webkit-transform: scale(1) !important;
-            transform: scale(1) !important;
-  }
 }
 
 @media screen and (max-width: 768px) {
+  .chegg img {
+    -webkit-transform: scale(0.8) !important;
+            transform: scale(0.8) !important;
+  }
   .section1 {
     height: 35vh;
   }
