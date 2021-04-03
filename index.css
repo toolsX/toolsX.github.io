@@ -251,8 +251,8 @@ p {
   height: 100%;
   width: 100%;
   top: -20%;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .tile-group .chegg .background {
@@ -399,6 +399,10 @@ p {
 @media screen and (max-width: 500px) {
   .title {
     font-size: 12vw;
+  }
+  .chegg img {
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
   }
 }
 
