@@ -273,7 +273,7 @@ p {
   margin: 5px;
 }
 
-.tile-group .how-to-make-your-download-speed-faster-using-multi-threaded-downlaoding {
+.tile-group .how-to-make-your-download-speed-faster-using-multi-threaded-downloading {
   background: -webkit-gradient(linear, left top, left bottom, from(#ffbdff), to(#ffc8ff));
   background: linear-gradient(top, #ffbdff, #ffc8ff);
   -webkit-filter: drop-shadow(5px 5px 25px #ffa6ff);
@@ -286,7 +286,7 @@ p {
           justify-content: center;
 }
 
-.tile-group .how-to-make-your-download-speed-faster-using-multi-threaded-downlaoding img {
+.tile-group .how-to-make-your-download-speed-faster-using-multi-threaded-downloading img {
   position: relative;
   width: auto;
   height: 90%;
