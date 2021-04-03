@@ -83,7 +83,9 @@ header {
   position: relative;
   width: 100vw;
   min-height: 30vh;
-  height: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
