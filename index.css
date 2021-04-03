@@ -361,6 +361,9 @@ p {
     font-size: 10vw;
     top: 15vh;
   }
+  .blog-title {
+    font-size: 3vh;
+  }
   .soon > label {
     font-size: 40px;
   }
@@ -379,6 +382,9 @@ p {
 @media screen and (max-width: 1000px) {
   .title {
     font-size: 7vw;
+  }
+  .blog-title {
+    font-size: 3vh;
   }
 }
 
