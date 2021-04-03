@@ -55,9 +55,14 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3% 3% 0 5%;
-  background-color: white;
-  width: 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+  height: auto;
+  width: 25%;
+  padding: 15px;
+  color: #9b9b9b;
 }
 
 header {
@@ -123,7 +128,7 @@ article {
           flex-direction: column;
   padding: 3% 3% 0 5%;
   background-color: white;
-  width: auto;
+  width: 75%;
 }
 
 .important {
@@ -223,6 +228,17 @@ p,
   font-size: 35px;
   -webkit-filter: drop-shadow(0px 0px 15px orange);
           filter: drop-shadow(0px 0px 15px orange);
+}
+
+.view {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 footer {
