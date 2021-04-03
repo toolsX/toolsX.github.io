@@ -74,7 +74,6 @@ aside {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  background-color: red;
 }
 
 header {
