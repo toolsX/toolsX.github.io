@@ -182,7 +182,7 @@ p {
 
 .tile-group .tile .date {
   position: absolute;
-  color: #858585;
+  color: #4b4b4b;
   font-size: 20px;
   margin-top: 7px;
 }
@@ -196,12 +196,17 @@ p {
   text-align: center;
   border-radius: 7px;
   padding: 6px;
+  margin: 3px;
   right: 5%;
   float: right;
 }
 
 .tile-group .tile .macos {
   background-color: blue;
+}
+
+.tile-group .tile .android {
+  background-color: #32de84;
 }
 
 .tile-group .info {
@@ -292,6 +297,27 @@ p {
   width: auto;
   height: 90%;
   margin-top: 15px;
+  z-index: -1;
+}
+
+.tile-group .how-to-find-answers-easily {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7700e7fb), to(#7a62ff));
+  background: linear-gradient(top, #7700e7fb, #7a62ff);
+  -webkit-filter: drop-shadow(5px 5px 25px #9a30fd);
+          filter: drop-shadow(5px 5px 25px #9a30fd);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tile-group .how-to-find-answers-easily img {
+  position: relative;
+  width: auto;
+  height: 90%;
+  top: -10px;
   z-index: -1;
 }
 
