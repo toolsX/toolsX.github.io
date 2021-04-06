@@ -334,8 +334,8 @@ p {
   overflow: hidden;
   position: relative;
   width: auto;
-  height: 90%;
-  top: -10px;
+  height: 70%;
+  top: 15px;
   z-index: -1;
 }
 
