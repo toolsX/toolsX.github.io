@@ -1,15 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-body {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "poppins", sans-serif;
-  margin: 0px;
 }
 
-section {
+body {
+  font-family: "poppins", sans-serif;
+  height: auto;
+  margin: 0px;
+  position: relative;
+}
+
+.view {
+  position: relative;
   margin-left: 5%;
-  margin-right: 10%;
-  padding: 1% 0 7% 0;
+  width: 70vw;
+  height: auto;
 }
 
 h1 {
@@ -26,5 +32,17 @@ p {
 
 a {
   color: #00afaf;
+}
+
+@media screen and (max-width: 768px) {
+  .view {
+    position: relative;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 40px;
+    margin: 0px;
+    width: 100vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
