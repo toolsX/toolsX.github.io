@@ -9,6 +9,7 @@ body {
   height: auto;
   margin: 0px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .view {
