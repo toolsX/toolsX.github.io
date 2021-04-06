@@ -331,6 +331,7 @@ p {
 }
 
 .tile-group .how-to-find-answers-easily img {
+  overflow: hidden;
   position: relative;
   width: auto;
   height: 90%;
